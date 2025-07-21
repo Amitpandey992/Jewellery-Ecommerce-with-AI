@@ -1,0 +1,862 @@
+{
+    "meta": {
+        "version": "1.0.0",
+        "currencyDefault": "INR",
+        "lastUpdated": "2025-07-21T10:00:00Z",
+        "categories": [
+            "Necklace",
+            "Ring",
+            "Bracelet",
+            "Bangle",
+            "Earrings",
+            "Pendant",
+            "Mangalsutra",
+            "NosePin",
+            "Anklet",
+            "Chain",
+            "Kids"
+        ],
+        "filterFacets": {
+            "category": true,
+            "subCategory": true,
+            "metal": true,
+            "purityK": true,
+            "gemstone": true,
+            "gender": true,
+            "occasion": true,
+            "style": true,
+            "price": true,
+            "brand": true,
+            "inStock": true
+        },
+        "notes": "Image URLs point to high‑resolution royalty‑free sample assets (Unsplash / Pexels). For production, download, optimize, and serve via your CDN to avoid hotlinking + ensure licensing compliance."
+    },
+    "jewelry": [
+        {
+            "id": 1,
+            "slug": "18k-filigree-gold-necklace",
+            "name": "18K Filigree Gold Necklace",
+            "category": "Necklace",
+            "subCategory": "Filigree",
+            "price": 29999,
+            "discountPrice": 24999,
+            "currency": "INR",
+            "description": "Elegant handcrafted 18K yellow gold filigree necklace ideal for weddings & festive wear.",
+            "material": "18K Yellow Gold",
+            "purityK": 18,
+            "weight_g": 20.2,
+            "gender": "Women",
+            "occasion": ["Wedding", "Festive"],
+            "style": ["Traditional", "Bridal"],
+            "gemstone": null,
+            "inStock": true,
+            "stockQty": 8,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1598454449218-9d16d8b0c86e?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "18K gold filigree necklace front view"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1574664577630-6a1f4e49a4a2?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Gold necklace detail closeup"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1556228453-efd5d3f5a3f2?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Model wearing gold necklace"
+                }
+            ],
+            "rating": 4.8,
+            "reviewsCount": 125,
+            "brand": "GoldShine",
+            "tags": ["gold", "necklace", "women", "wedding", "filigree"],
+            "sku": "GS-NC-1001",
+            "certifications": ["BIS Hallmarked"],
+            "gstPercent": 3,
+            "shippingDays": 5,
+            "createdAt": "2025-06-01T10:00:00Z",
+            "updatedAt": "2025-07-21T10:00:00Z"
+        },
+        {
+            "id": 2,
+            "slug": "solitaire-diamond-engagement-ring",
+            "name": "Solitaire Diamond Engagement Ring",
+            "category": "Ring",
+            "subCategory": "Engagement",
+            "price": 49999,
+            "discountPrice": 45999,
+            "currency": "INR",
+            "description": "Classic solitaire engagement ring set in 18K white gold with certified round brilliant diamond.",
+            "material": "18K White Gold",
+            "purityK": 18,
+            "weight_g": 5.1,
+            "gender": "Women",
+            "occasion": ["Engagement"],
+            "style": ["Contemporary", "Minimal"],
+            "gemstone": "Diamond",
+            "gemstoneCarat": 0.75,
+            "ringSizes": ["5", "6", "7", "8"],
+            "inStock": true,
+            "stockQty": 15,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Solitaire diamond ring top view"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1535576431033-74c1e79b3c60?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Diamond ring side profile"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1522336572468-97b06e8ef143?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Ring in box lifestyle shot"
+                }
+            ],
+            "rating": 4.9,
+            "reviewsCount": 210,
+            "brand": "DiamondCraft",
+            "tags": ["diamond", "ring", "engagement", "luxury"],
+            "sku": "DC-RG-2002",
+            "certifications": ["IGI", "GIA"],
+            "gstPercent": 3,
+            "shippingDays": 7,
+            "createdAt": "2025-05-20T09:00:00Z",
+            "updatedAt": "2025-07-21T10:00:00Z"
+        },
+        {
+            "id": 3,
+            "slug": "sterling-silver-daily-bracelet",
+            "name": "Sterling Silver Dailywear Bracelet",
+            "category": "Bracelet",
+            "subCategory": "Chain Bracelet",
+            "price": 5999,
+            "discountPrice": 4999,
+            "currency": "INR",
+            "description": "Minimal sterling silver bracelet for everyday wear; adjustable fit.",
+            "material": "925 Sterling Silver",
+            "purityK": null,
+            "weight_g": 10.0,
+            "gender": "Unisex",
+            "occasion": ["Dailywear", "Casual"],
+            "style": ["Minimal", "Contemporary"],
+            "gemstone": null,
+            "adjustable": true,
+            "inStock": false,
+            "stockQty": 0,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1543294001-f7cd2e0aa7b0?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Sterling silver bracelet flat lay"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Closeup of silver chain bracelet"
+                }
+            ],
+            "rating": 4.5,
+            "reviewsCount": 90,
+            "brand": "SilverAura",
+            "tags": ["silver", "bracelet", "unisex"],
+            "sku": "SA-BR-3003",
+            "certifications": [],
+            "gstPercent": 3,
+            "shippingDays": 4,
+            "createdAt": "2025-04-11T12:00:00Z",
+            "updatedAt": "2025-07-10T08:00:00Z"
+        },
+        {
+            "id": 4,
+            "slug": "22k-bridal-mangalsutra",
+            "name": "22K Traditional Bridal Mangalsutra",
+            "category": "Mangalsutra",
+            "subCategory": "Bridal",
+            "price": 35999,
+            "discountPrice": 32999,
+            "currency": "INR",
+            "description": "Traditional black bead & 22K gold mangalsutra with ornate pendant centerpiece.",
+            "material": "22K Yellow Gold",
+            "purityK": 22,
+            "weight_g": 18.4,
+            "gender": "Women",
+            "occasion": ["Wedding", "Dailywear"],
+            "style": ["Traditional"],
+            "gemstone": null,
+            "length_cm": 45,
+            "inStock": true,
+            "stockQty": 12,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1587831990020-820893f1c61a?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Traditional mangalsutra on fabric"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Mangalsutra pendant closeup"
+                }
+            ],
+            "rating": 4.7,
+            "reviewsCount": 64,
+            "brand": "ShubhGold",
+            "tags": ["mangalsutra", "bridal", "22k"],
+            "sku": "SG-MS-4201",
+            "certifications": ["BIS Hallmarked"],
+            "gstPercent": 3,
+            "shippingDays": 6,
+            "createdAt": "2025-03-15T08:30:00Z",
+            "updatedAt": "2025-07-19T07:00:00Z"
+        },
+        {
+            "id": 5,
+            "slug": "14k-rose-gold-heart-pendant",
+            "name": "14K Rose Gold Heart Pendant",
+            "category": "Pendant",
+            "subCategory": "Heart",
+            "price": 7999,
+            "discountPrice": 6499,
+            "currency": "INR",
+            "description": "Cute 14K rose gold heart pendant; perfect gifting piece; chain optional.",
+            "material": "14K Rose Gold",
+            "purityK": 14,
+            "weight_g": 2.3,
+            "gender": "Women",
+            "occasion": ["Gifting", "Casual"],
+            "style": ["Minimal", "Contemporary"],
+            "gemstone": null,
+            "chainIncluded": false,
+            "inStock": true,
+            "stockQty": 50,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1556228578-3665ddf37a9a?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Rose gold heart pendant closeup"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1567958451986-2de427a41c50?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Heart pendant lifestyle shot"
+                }
+            ],
+            "rating": 4.6,
+            "reviewsCount": 188,
+            "brand": "LoveLite",
+            "tags": ["rose gold", "pendant", "heart", "gifting"],
+            "sku": "LL-PD-5010",
+            "certifications": ["BIS Hallmarked"],
+            "gstPercent": 3,
+            "shippingDays": 3,
+            "createdAt": "2025-02-01T11:00:00Z",
+            "updatedAt": "2025-07-01T09:00:00Z"
+        },
+        {
+            "id": 6,
+            "slug": "platinum-mens-band",
+            "name": "Platinum Men's Band",
+            "category": "Ring",
+            "subCategory": "Band",
+            "price": 55999,
+            "discountPrice": 52999,
+            "currency": "INR",
+            "description": "Solid platinum comfort-fit men's wedding band with brushed finish.",
+            "material": "Platinum 950",
+            "purityK": null,
+            "weight_g": 7.8,
+            "gender": "Men",
+            "occasion": ["Wedding"],
+            "style": ["Minimal", "Classic"],
+            "gemstone": null,
+            "ringSizes": ["8", "9", "10", "11", "12"],
+            "inStock": true,
+            "stockQty": 20,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1585366119957-e9730b6d0f2a?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Platinum men band close view"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1473181488821-2d23949a045a?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Pair of wedding bands"
+                }
+            ],
+            "rating": 4.8,
+            "reviewsCount": 72,
+            "brand": "PlatinaPro",
+            "tags": ["platinum", "men", "band", "wedding"],
+            "sku": "PP-RG-6006",
+            "certifications": ["PGI"],
+            "gstPercent": 3,
+            "shippingDays": 7,
+            "createdAt": "2025-01-18T10:30:00Z",
+            "updatedAt": "2025-07-14T10:00:00Z"
+        },
+        {
+            "id": 7,
+            "slug": "18k-gold-pearl-drop-earrings",
+            "name": "18K Gold & Pearl Drop Earrings",
+            "category": "Earrings",
+            "subCategory": "Drop",
+            "price": 13999,
+            "discountPrice": 11999,
+            "currency": "INR",
+            "description": "Delicate 18K gold drop earrings featuring cultured freshwater pearls.",
+            "material": "18K Yellow Gold",
+            "purityK": 18,
+            "weight_g": 4.5,
+            "gender": "Women",
+            "occasion": ["Festive", "Party"],
+            "style": ["Elegant"],
+            "gemstone": "Pearl",
+            "inStock": true,
+            "stockQty": 25,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1600180758890-6b94519a50e2?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Gold pearl drop earrings front"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1600180758745-f188e77ae5b5?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Pearl earring detail"
+                }
+            ],
+            "rating": 4.4,
+            "reviewsCount": 52,
+            "brand": "PearlMist",
+            "tags": ["pearl", "earrings", "gold", "drop"],
+            "sku": "PM-ER-7007",
+            "certifications": ["BIS Hallmarked"],
+            "gstPercent": 3,
+            "shippingDays": 4,
+            "createdAt": "2025-05-01T07:00:00Z",
+            "updatedAt": "2025-07-05T07:00:00Z"
+        },
+        {
+            "id": 8,
+            "slug": "18k-gold-jhumka-earrings",
+            "name": "18K Gold Jhumka Earrings",
+            "category": "Earrings",
+            "subCategory": "Jhumka",
+            "price": 24999,
+            "discountPrice": 21999,
+            "currency": "INR",
+            "description": "Traditional bell‑shaped 18K gold jhumka earrings with tiny ghungroo accents.",
+            "material": "18K Yellow Gold",
+            "purityK": 18,
+            "weight_g": 11.2,
+            "gender": "Women",
+            "occasion": ["Festive", "Wedding"],
+            "style": ["Traditional"],
+            "gemstone": null,
+            "inStock": true,
+            "stockQty": 9,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1600180758897-48e9dc625e1d?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Gold jhumka earrings front"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1600180758760-afa04a3e1b3e?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Jhumka closeup"
+                }
+            ],
+            "rating": 4.7,
+            "reviewsCount": 133,
+            "brand": "Riwaaz",
+            "tags": ["jhumka", "earrings", "gold", "traditional"],
+            "sku": "RW-ER-8080",
+            "certifications": ["BIS Hallmarked"],
+            "gstPercent": 3,
+            "shippingDays": 5,
+            "createdAt": "2025-04-24T06:00:00Z",
+            "updatedAt": "2025-07-18T06:00:00Z"
+        },
+        {
+            "id": 9,
+            "slug": "925-silver-anklet-ghungroo",
+            "name": "925 Silver Ghungroo Anklet",
+            "category": "Anklet",
+            "subCategory": "Ghungroo",
+            "price": 2499,
+            "discountPrice": 1999,
+            "currency": "INR",
+            "description": "Sterling silver anklet with tiny ghungroo bells; traditional ethnic vibe.",
+            "material": "925 Sterling Silver",
+            "purityK": null,
+            "weight_g": 6.7,
+            "gender": "Women",
+            "occasion": ["Festive", "Dailywear"],
+            "style": ["Traditional"],
+            "gemstone": null,
+            "length_cm": 26,
+            "inStock": true,
+            "stockQty": 60,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1592878904946-bf6b6e1b3b9a?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Silver ghungroo anklet closeup"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1592840055641-2dc57bfcfa53?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Anklet worn on foot"
+                }
+            ],
+            "rating": 4.3,
+            "reviewsCount": 44,
+            "brand": "SilverAura",
+            "tags": ["anklet", "silver", "ghungroo"],
+            "sku": "SA-AK-9009",
+            "certifications": [],
+            "gstPercent": 3,
+            "shippingDays": 3,
+            "createdAt": "2025-06-10T05:00:00Z",
+            "updatedAt": "2025-07-15T05:00:00Z"
+        },
+        {
+            "id": 10,
+            "slug": "18k-gold-bangle-set",
+            "name": "18K Gold Bangle Set (Pair)",
+            "category": "Bangle",
+            "subCategory": "Plain",
+            "price": 44999,
+            "discountPrice": 39999,
+            "currency": "INR",
+            "description": "Pair of classic 18K gold bangles with smooth glossy finish; available in multiple sizes.",
+            "material": "18K Yellow Gold",
+            "purityK": 18,
+            "weight_g": 30.5,
+            "gender": "Women",
+            "occasion": ["Wedding", "Festive", "Dailywear"],
+            "style": ["Classic"],
+            "gemstone": null,
+            "bangleSizes_mm": [56, 58, 60, 62],
+            "inStock": true,
+            "stockQty": 6,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1587560699334-cc1ab76859e4?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Pair of gold bangles stacked"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1587560699651-efb2d3b2b243?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Gold bangle detail"
+                }
+            ],
+            "rating": 4.6,
+            "reviewsCount": 59,
+            "brand": "GoldShine",
+            "tags": ["bangle", "gold", "pair"],
+            "sku": "GS-BG-1002",
+            "certifications": ["BIS Hallmarked"],
+            "gstPercent": 3,
+            "shippingDays": 8,
+            "createdAt": "2025-03-05T05:00:00Z",
+            "updatedAt": "2025-07-16T05:00:00Z"
+        },
+        {
+            "id": 11,
+            "slug": "white-gold-tennis-bracelet-diamond",
+            "name": "White Gold Diamond Tennis Bracelet",
+            "category": "Bracelet",
+            "subCategory": "Tennis",
+            "price": 99999,
+            "discountPrice": 89999,
+            "currency": "INR",
+            "description": "Line bracelet with prong‑set natural diamonds in 18K white gold.",
+            "material": "18K White Gold",
+            "purityK": 18,
+            "weight_g": 12.9,
+            "gender": "Women",
+            "occasion": ["Anniversary", "Party"],
+            "style": ["Luxury", "Elegant"],
+            "gemstone": "Diamond",
+            "totalDiamondCarat": 2.5,
+            "inStock": true,
+            "stockQty": 3,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1516637090014-cb1ab0d08fc7?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Diamond tennis bracelet closeup"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1516637090400-eda5b0b2ec61?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Tennis bracelet worn on wrist"
+                }
+            ],
+            "rating": 4.9,
+            "reviewsCount": 31,
+            "brand": "DiamondCraft",
+            "tags": ["diamond", "bracelet", "white gold", "luxury"],
+            "sku": "DC-BR-2101",
+            "certifications": ["IGI", "GIA"],
+            "gstPercent": 3,
+            "shippingDays": 10,
+            "createdAt": "2025-02-25T04:00:00Z",
+            "updatedAt": "2025-07-20T04:00:00Z"
+        },
+        {
+            "id": 12,
+            "slug": "22k-temple-necklace-lakshmi",
+            "name": "22K Temple Necklace – Lakshmi Motif",
+            "category": "Necklace",
+            "subCategory": "Temple",
+            "price": 67999,
+            "discountPrice": 62999,
+            "currency": "INR",
+            "description": "Heavy 22K gold temple necklace with Goddess Lakshmi motifs & antique finish.",
+            "material": "22K Yellow Gold",
+            "purityK": 22,
+            "weight_g": 32.0,
+            "gender": "Women",
+            "occasion": ["Wedding", "Festive"],
+            "style": ["Temple", "Traditional"],
+            "gemstone": "Kundan",
+            "inStock": true,
+            "stockQty": 4,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1606188074043-bbc90b9fc5f0?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Temple necklace goddess motif"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1606188073847-2ec0aaf645fa?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Closeup of Lakshmi pendant"
+                }
+            ],
+            "rating": 4.8,
+            "reviewsCount": 40,
+            "brand": "Riwaaz",
+            "tags": ["temple", "necklace", "lakshmi", "22k"],
+            "sku": "RW-NC-1288",
+            "certifications": ["BIS Hallmarked"],
+            "gstPercent": 3,
+            "shippingDays": 9,
+            "createdAt": "2025-04-30T03:00:00Z",
+            "updatedAt": "2025-07-12T03:00:00Z"
+        },
+        {
+            "id": 13,
+            "slug": "emerald-cocktail-ring-18k",
+            "name": "Emerald Cocktail Ring in 18K Gold",
+            "category": "Ring",
+            "subCategory": "Cocktail",
+            "price": 25999,
+            "discountPrice": 22999,
+            "currency": "INR",
+            "description": "Statement cocktail ring featuring oval emerald haloed by accent diamonds in 18K yellow gold.",
+            "material": "18K Yellow Gold",
+            "purityK": 18,
+            "weight_g": 6.9,
+            "gender": "Women",
+            "occasion": ["Party", "Festive"],
+            "style": ["Statement"],
+            "gemstone": "Emerald",
+            "gemstoneCarat": 1.8,
+            "accentDiamondCarat": 0.2,
+            "ringSizes": ["6", "7", "8"],
+            "inStock": true,
+            "stockQty": 14,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1617038072255-4e6c9c6de048?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Emerald cocktail ring top"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1617038072373-8000a43d0b2a?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Emerald ring side profile"
+                }
+            ],
+            "rating": 4.5,
+            "reviewsCount": 27,
+            "brand": "GemGala",
+            "tags": ["emerald", "cocktail ring", "gold"],
+            "sku": "GG-RG-1313",
+            "certifications": ["IGI"],
+            "gstPercent": 3,
+            "shippingDays": 6,
+            "createdAt": "2025-05-28T02:00:00Z",
+            "updatedAt": "2025-07-11T02:00:00Z"
+        },
+        {
+            "id": 14,
+            "slug": "kids-silver-charm-bracelet",
+            "name": "Kids Silver Charm Bracelet",
+            "category": "Bracelet",
+            "subCategory": "Charm",
+            "price": 1999,
+            "discountPrice": 1499,
+            "currency": "INR",
+            "description": "Adjustable sterling silver bracelet with colorful enamel charms for kids.",
+            "material": "925 Sterling Silver",
+            "purityK": null,
+            "weight_g": 5.2,
+            "gender": "Kids",
+            "occasion": ["Birthday", "Gifting"],
+            "style": ["Cute", "Colorful"],
+            "gemstone": null,
+            "adjustable": true,
+            "inStock": true,
+            "stockQty": 100,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1599940824382-388c9a0dd9c5?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Kids charm bracelet flat lay"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1599940824247-3f1a33b8ad3a?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Bracelet with colorful charms"
+                }
+            ],
+            "rating": 4.2,
+            "reviewsCount": 19,
+            "brand": "TinyTreasure",
+            "tags": ["kids", "bracelet", "charm", "silver"],
+            "sku": "TT-BR-1414",
+            "certifications": [],
+            "gstPercent": 3,
+            "shippingDays": 2,
+            "createdAt": "2025-06-05T01:00:00Z",
+            "updatedAt": "2025-07-09T01:00:00Z"
+        },
+        {
+            "id": 15,
+            "slug": "mens-oxidized-silver-kada",
+            "name": "Men's Oxidized Silver Kada",
+            "category": "Bracelet",
+            "subCategory": "Kada",
+            "price": 3499,
+            "discountPrice": 2999,
+            "currency": "INR",
+            "description": "Bold oxidized sterling silver kada bracelet with textured finish; openable hinge.",
+            "material": "925 Sterling Silver",
+            "purityK": null,
+            "weight_g": 22.4,
+            "gender": "Men",
+            "occasion": ["Casual", "Festive"],
+            "style": ["Ethnic", "Statement"],
+            "gemstone": null,
+            "inStock": true,
+            "stockQty": 35,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1600180758742-5b41e3b6d2d4?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Oxidized silver kada closeup"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1600180758731-197b1a0dab19?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Men wearing silver kada"
+                }
+            ],
+            "rating": 4.3,
+            "reviewsCount": 48,
+            "brand": "SilverAura",
+            "tags": ["kada", "men", "silver"],
+            "sku": "SA-KD-1515",
+            "certifications": [],
+            "gstPercent": 3,
+            "shippingDays": 3,
+            "createdAt": "2025-04-02T00:00:00Z",
+            "updatedAt": "2025-07-08T00:00:00Z"
+        },
+        {
+            "id": 16,
+            "slug": "rose-gold-ruby-stud-earrings",
+            "name": "Rose Gold Ruby Stud Earrings",
+            "category": "Earrings",
+            "subCategory": "Stud",
+            "price": 11999,
+            "discountPrice": 9999,
+            "currency": "INR",
+            "description": "Round ruby studs bezel‑set in 18K rose gold; secure screw backs.",
+            "material": "18K Rose Gold",
+            "purityK": 18,
+            "weight_g": 3.1,
+            "gender": "Women",
+            "occasion": ["Dailywear", "Office"],
+            "style": ["Minimal", "Elegant"],
+            "gemstone": "Ruby",
+            "gemstoneCarat": 0.6,
+            "inStock": true,
+            "stockQty": 28,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1562685775-c3b9a8505b74?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Ruby stud earrings closeup"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1562685775-a093b5eec7d2?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Rose gold ruby studs on display"
+                }
+            ],
+            "rating": 4.5,
+            "reviewsCount": 61,
+            "brand": "GemGala",
+            "tags": ["ruby", "stud", "earrings", "rose gold"],
+            "sku": "GG-ER-1616",
+            "certifications": ["IGI"],
+            "gstPercent": 3,
+            "shippingDays": 4,
+            "createdAt": "2025-03-22T14:00:00Z",
+            "updatedAt": "2025-07-06T14:00:00Z"
+        },
+        {
+            "id": 17,
+            "slug": "14k-minimal-bar-necklace",
+            "name": "14K Minimal Bar Necklace",
+            "category": "Necklace",
+            "subCategory": "Minimal",
+            "price": 12999,
+            "discountPrice": 9999,
+            "currency": "INR",
+            "description": "Simple 14K gold bar pendant fixed to a fine chain; everyday chic.",
+            "material": "14K Yellow Gold",
+            "purityK": 14,
+            "weight_g": 3.9,
+            "gender": "Women",
+            "occasion": ["Dailywear", "Office"],
+            "style": ["Minimal", "Contemporary"],
+            "gemstone": null,
+            "length_cm": 42,
+            "inStock": true,
+            "stockQty": 70,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1590086782792-42dd4fa143a7?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Minimal bar necklace flat lay"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1590086782745-38469c2a2ddc?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Model wearing bar necklace"
+                }
+            ],
+            "rating": 4.4,
+            "reviewsCount": 95,
+            "brand": "LoveLite",
+            "tags": ["minimal", "necklace", "bar", "14k"],
+            "sku": "LL-NC-1717",
+            "certifications": ["BIS Hallmarked"],
+            "gstPercent": 3,
+            "shippingDays": 3,
+            "createdAt": "2025-06-18T13:00:00Z",
+            "updatedAt": "2025-07-17T13:00:00Z"
+        },
+        {
+            "id": 18,
+            "slug": "platinum-diamond-nose-pin",
+            "name": "Platinum Diamond Nose Pin",
+            "category": "NosePin",
+            "subCategory": "Stud",
+            "price": 8999,
+            "discountPrice": 7999,
+            "currency": "INR",
+            "description": "Tiny platinum nose stud with secure screw back and single brilliant diamond.",
+            "material": "Platinum 950",
+            "purityK": null,
+            "weight_g": 0.8,
+            "gender": "Women",
+            "occasion": ["Dailywear"],
+            "style": ["Minimal"],
+            "gemstone": "Diamond",
+            "gemstoneCarat": 0.07,
+            "inStock": true,
+            "stockQty": 150,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1617038260897-f5ba025795ae?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Platinum diamond nose pin closeup"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1617038260818-1a4e1d1e9f24?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Nose stud on model"
+                }
+            ],
+            "rating": 4.6,
+            "reviewsCount": 142,
+            "brand": "PlatinaPro",
+            "tags": ["nose pin", "platinum", "diamond", "stud"],
+            "sku": "PP-NP-1818",
+            "certifications": ["PGI", "IGI"],
+            "gstPercent": 3,
+            "shippingDays": 2,
+            "createdAt": "2025-06-01T12:00:00Z",
+            "updatedAt": "2025-07-13T12:00:00Z"
+        },
+        {
+            "id": 19,
+            "slug": "18k-gold-unisex-chain",
+            "name": "18K Gold Unisex Chain",
+            "category": "Chain",
+            "subCategory": "Cable",
+            "price": 21999,
+            "discountPrice": 19999,
+            "currency": "INR",
+            "description": "Durable 18K gold cable chain suitable for pendants or solo wear; unisex design.",
+            "material": "18K Yellow Gold",
+            "purityK": 18,
+            "weight_g": 9.6,
+            "gender": "Unisex",
+            "occasion": ["Dailywear", "Gifting"],
+            "style": ["Classic"],
+            "gemstone": null,
+            "length_cm": 50,
+            "inStock": true,
+            "stockQty": 45,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1600180758749-597240fdfd1a?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Gold cable chain closeup"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1600180758728-5e80af0da822?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Unisex gold chain worn"
+                }
+            ],
+            "rating": 4.5,
+            "reviewsCount": 88,
+            "brand": "GoldShine",
+            "tags": ["chain", "gold", "unisex"],
+            "sku": "GS-CH-1919",
+            "certifications": ["BIS Hallmarked"],
+            "gstPercent": 3,
+            "shippingDays": 5,
+            "createdAt": "2025-05-12T16:00:00Z",
+            "updatedAt": "2025-07-04T16:00:00Z"
+        },
+        {
+            "id": 20,
+            "slug": "polki-bridal-choker-18k",
+            "name": "18K Gold & Polki Bridal Choker",
+            "category": "Necklace",
+            "subCategory": "Choker",
+            "price": 89999,
+            "discountPrice": 82999,
+            "currency": "INR",
+            "description": "Grand bridal choker in 18K gold with uncut polki diamonds, enamel work & pearl drops.",
+            "material": "18K Yellow Gold",
+            "purityK": 18,
+            "weight_g": 38.5,
+            "gender": "Women",
+            "occasion": ["Bridal", "Wedding"],
+            "style": ["Bridal", "Traditional", "Statement"],
+            "gemstone": "Polki Diamond",
+            "pearlAccents": true,
+            "inStock": true,
+            "stockQty": 2,
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1604467793651-4f74c461a775?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Polki bridal choker front"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1604467793677-9d25d1091d40?auto=format&fit=crop&w=1000&q=80",
+                    "alt": "Choker detail closeup"
+                }
+            ],
+            "rating": 4.9,
+            "reviewsCount": 18,
+            "brand": "Riwaaz Bridal",
+            "tags": ["bridal", "choker", "polki", "gold"],
+            "sku": "RB-NC-2020",
+            "certifications": ["BIS Hallmarked", "IGI"],
+            "gstPercent": 3,
+            "shippingDays": 12,
+            "createdAt": "2025-05-30T18:00:00Z",
+            "updatedAt": "2025-07-20T18:00:00Z"
+        }
+    ]
+}
