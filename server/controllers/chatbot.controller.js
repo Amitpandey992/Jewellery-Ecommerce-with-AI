@@ -1,40 +1,69 @@
-import OpenAI from "openai";
 import dotenv from "dotenv";
-dotenv.config();
-import { request, response } from "express";
-import products from "../data.json" assert { type: "json" };
+import fetch from "node-fetch";
+import data from "../data.json" assert { type: "json" };
+const products = data.jewellery;
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+dotenv.config();
+
+const OLLAMA_HOST = process.env.OLLAMA_HOST || "http://localhost:11434";
 
 export class ChatbotController {
-    static async chatbot(request, response) {
-        const { userMessage } = request.body;
+    static async chatbot(req, res) {
+        const { userMessage } = req.body;
 
         try {
-            // Step 1: Ask GPT to extract filters
-            const aiResponse = await openai.chat.completions.create({
-                model: "gpt-4o-mini",
-                messages: [
-                    {
-                        role: "system",
-                        content:
-                            "You are an e-commerce assistant. Extract product filters from user queries like category and price. Example: 'necklaces under 20k' -> {category:'necklace', maxPrice:20000}",
-                    },
-                    { role: "user", content: userMessage },
-                ],
+            const ollamaResp = await fetch(`${OLLAMA_HOST}/api/generate`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    model: "gemma3",
+                    stream: false,
+                    prompt: `Extract product filters from this user query for a jewellery e-commerce store.
+User query: "${userMessage}"
+
+Return ONLY valid minified JSON in this exact shape:
+{"category":"<string|optional>","maxPrice":<number|optional>}
+
+If nothing found, return {}.
+No extra text.`,
+                }),
             });
 
-            const filterText = aiResponse.choices[0].message.content;
-            console.log("AI Filter:", filterText);
+            const ollamaData = await ollamaResp.json();
+            let rawAI = (ollamaData.response || "").trim();
+            console.log("AI raw:", rawAI);
 
-            // Step 2: Parse filterText into JSON (basic approach)
+            rawAI = rawAI.replace(/```json|```/gi, "").trim();
+
             let filters = {};
             try {
-                filters = JSON.parse(filterText);
-            } catch (e) {}
+                filters = JSON.parse(rawAI);
+            } catch {
+                const jsonMatch = rawAI.match(/\{[\s\S]*\}/);
+                if (jsonMatch) {
+                    try {
+                        filters = JSON.parse(jsonMatch[0]);
+                    } catch {
+                        console.log("Still can't parse JSON from AI.");
+                    }
+                } else {
+                    console.log("No JSON braces found in AI response.");
+                }
+            }
 
-            // Step 3: Filter products
+            if (!filters.category) {
+                const catFromMsg = guessCategoryFromMessage(userMessage);
+                if (catFromMsg) filters.category = catFromMsg;
+            }
+            if (!filters.maxPrice) {
+                const priceFromMsg = guessPriceFromMessage(userMessage);
+                if (priceFromMsg) filters.maxPrice = priceFromMsg;
+            }
+
+            console.log("Resolved filters:", filters);
+
             let filteredProducts = products;
+
             if (filters.category) {
                 filteredProducts = filteredProducts.filter(
                     (p) =>
@@ -42,19 +71,57 @@ export class ChatbotController {
                         filters.category.toLowerCase()
                 );
             }
+
             if (filters.maxPrice) {
                 filteredProducts = filteredProducts.filter(
-                    (p) => p.discountPrice <= filters.maxPrice
+                    (p) =>
+                        Number(p.discountPrice ?? p.price) <=
+                        Number(filters.maxPrice)
                 );
             }
 
-            response.json({
-                message: "Here are the results",
+            return res.json({
+                filters,
+                count: filteredProducts.length,
                 products: filteredProducts,
             });
-        } catch (error) {
-            console.error(error);
-            response.status(500).json({ error: "Something went wrong" });
+        } catch (err) {
+            console.error("Chatbot error:", err);
+            return res
+                .status(500)
+                .json({ error: "Something went wrong in chatbot." });
         }
     }
+}
+
+const CATEGORY_KEYWORDS = [
+    { key: "ring", cat: "Ring" },
+    { key: "necklace", cat: "Necklace" },
+    { key: "mangalsutra", cat: "Mangalsutra" },
+    { key: "earring", cat: "Earrings" },
+    { key: "bangle", cat: "Bangle" },
+    { key: "bracelet", cat: "Bracelet" },
+    { key: "pendant", cat: "Pendant" },
+    { key: "anklet", cat: "Anklet" },
+    { key: "nose", cat: "NosePin" },
+    { key: "chain", cat: "Chain" },
+    { key: "kid", cat: "Kids" },
+];
+
+function guessCategoryFromMessage(msg = "") {
+    const m = msg.toLowerCase();
+    const found = CATEGORY_KEYWORDS.find(({ key }) => m.includes(key));
+    return found?.cat;
+}
+
+function guessPriceFromMessage(msg = "") {
+    const m = msg.toLowerCase();
+
+    const kMatch = m.match(/(\d+(?:\.\d+)?)\s*k/);
+    if (kMatch) return Math.round(Number(kMatch[1]) * 1000);
+
+    const numMatch = m.match(/(\d{3,7})/);
+    if (numMatch) return Number(numMatch[1]);
+
+    return null;
 }

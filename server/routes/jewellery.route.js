@@ -3,7 +3,7 @@ import { JewelleryController } from "../controllers/jewellery.controller.js";
 
 const router = express.Router();
 
-router.get("/", JewelleryController.getAllJewellery);
+router.get("/jewellery", JewelleryController.getAllJewellery);
 router.get("/:id", JewelleryController.getJewelleryById);
 router.post("/", JewelleryController.createJewellery);
 router.put("/:id", JewelleryController.updateJewellery);

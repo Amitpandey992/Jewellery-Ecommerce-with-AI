@@ -12,7 +12,7 @@ export class JewelleryController {
     static async getJewelleryById(req, res) {
         try {
             const { id } = req.params;
-            const jewelleryItem = jewelleryData.jewelry.find(
+            const jewelleryItem = jewelleryData.jewellery.find(
                 (item) => item.id === parseInt(id)
             );
             if (!jewelleryItem) {
@@ -39,7 +39,7 @@ export class JewelleryController {
     static async updateJewellery(req, res) {
         try {
             const { id } = req.params;
-            const jewelleryItem = jewelleryData.jewelry.find(
+            const jewelleryItem = jewelleryData.jewellery.find(
                 (item) => item.id === parseInt(id)
             );
             if (!jewelleryItem) {
@@ -62,7 +62,7 @@ export class JewelleryController {
     static async deleteJewellery(req, res) {
         try {
             const { id } = req.params;
-            const jewelleryItem = jewelleryData.jewelry.find(
+            const jewelleryItem = jewelleryData.jewellery.find(
                 (item) => item.id === parseInt(id)
             );
             if (!jewelleryItem) {
