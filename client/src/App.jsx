@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import ShopSingle from "./pages/ShopSingle";
 import Chatbot from "./pages/Chatbot";
-import Layout from "./pages/layout";
+import Layout from "./pages/Layout";
 
 function App() {
     return (
