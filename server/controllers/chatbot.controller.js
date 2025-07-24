@@ -1,6 +1,15 @@
 import dotenv from "dotenv";
 import fetch from "node-fetch";
-import data from "../data.json" assert { type: "json" };
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const data = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "../data.json"), "utf-8")
+);
 const products = data.jewellery;
 
 dotenv.config();
